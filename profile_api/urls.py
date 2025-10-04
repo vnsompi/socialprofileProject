@@ -7,6 +7,7 @@ from .views import UserProfileViewSet, LoginViewSet
 router = DefaultRouter()
 router.register('profile', UserProfileViewSet, basename='profile')
 router.register('login', LoginViewSet, basename='login')
+router.register('feed', views.FeedItemViewSet, basename='feed')
 
 
 urlpatterns = [
